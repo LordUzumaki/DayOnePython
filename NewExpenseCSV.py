@@ -50,6 +50,7 @@ class NewExpenseCSV:
         #reads and displayes all the expenses
         # This has a list that shows each time the row is added
         with open(self.file_name, 'r') as file:
+            
             reader = csv.reader(file)
             expenses = list(reader)
             if not expenses:
